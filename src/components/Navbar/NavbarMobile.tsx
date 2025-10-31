@@ -30,6 +30,7 @@ function NavbarMobile() {
         <div className="flex flex-col items-center gap-4">
           <NavLink name="Home" path="/" />
           <NavLink name="Menu" path="/menu" />
+          <NavLink name="Contatti" path="/contatti" />
         </div>
       </div>
     </>
