@@ -3,7 +3,7 @@ import NavLogo from "@components/Navbar/NavLogo"
 
 function Navbar() {
   return (
-    <div className="bg-[#24252a] w-full flex items-center px-20 py-6">
+    <div className="bg-[#24252a] w-full flex items-center px-20 py-6 sticky top-0 z-10">
       <div className="w-[40%] h-full flex items-center">
         <NavLogo brand="ESSE" />
       </div>
