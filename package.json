@@ -12,6 +12,7 @@
   "dependencies": {
     "@fontsource-variable/nunito-sans": "^5.2.7",
     "@fontsource-variable/roboto-mono": "^5.2.8",
+    "@fontsource/libre-baskerville": "^5.2.8",
     "@react-icons/all-files": "^4.1.0",
     "@tailwindcss/vite": "^4.1.16",
     "i18next": "^25.6.0",
