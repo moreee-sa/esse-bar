@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { HashRouter, Routes, Route } from 'react-router'
 import './index.css'
 import Home from '@pages/Home'
+import '@fontsource-variable/roboto-mono';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
