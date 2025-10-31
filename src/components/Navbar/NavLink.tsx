@@ -20,7 +20,7 @@ function NavLink({ name, path, highlighted=false }: NavLinkProps) {
             {name}
         </span>
         {!highlighted &&
-          <div className="h-0.5 w-full group-hover:bg-black transition-colors duration-500"></div>
+          <div className="h-px w-full group-hover:bg-white transition-colors duration-500" />
         }
       </div>
     </Link>
