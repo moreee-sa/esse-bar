@@ -2,11 +2,12 @@ import { Link } from "react-router"
 
 type NavLogoProps = {
   brand: string;
+  path: string;
 }
 
-function NavLogo({ brand }: NavLogoProps) {
+function NavLogo({ brand, path }: NavLogoProps) {
   return (
-    <Link to={"/home"}>
+    <Link to={path}>
       <span
         style={{
           fontFamily: "'Roboto Mono Variable', monospace",
