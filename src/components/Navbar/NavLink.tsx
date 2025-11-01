@@ -16,7 +16,7 @@ function NavLink({ name, path, highlighted=false }: NavLinkProps) {
         <span
           style={{
             fontFamily: "'Nunito Sans Variable', sans-serif",
-            fontWeight: 350,
+            fontWeight: 400,
             color: text,
           }}
           className="font-bold text-lg"

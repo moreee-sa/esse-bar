@@ -5,7 +5,7 @@ import { IoCloseOutline, IoMenuOutline  } from "react-icons/io5";
 import { useTheme } from "../Theme/ThemeContext";
 
 function NavbarMobile() {
-  const { primary, text } = useTheme();
+  const { primary, secondary, text } = useTheme();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -30,7 +30,10 @@ function NavbarMobile() {
 
       <div className={`z-20 fixed top-0 right-0 w-full h-full transition-[backdrop-filter] duration-300 md:hidden ${isOpen ? 'translate-x-0 backdrop-blur-xs' : 'translate-x-full'}`} onClick={() => handleMenu()} />
 
-      <div className={`z-30 fixed top-0 right-0 w-[250px] h-full bg-[#0e131f] transform transition-transform duration-300 md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div
+        className={`z-30 fixed top-0 right-0 w-[250px] h-full transform transition-transform duration-300 md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        style={{ backgroundColor: secondary }}
+      >
         <div className="h-20 flex flex-col items-end justify-center p-6" onClick={() => handleMenu()}>
           {isOpen && <IoCloseOutline color={text} size={35} />}
         </div>
