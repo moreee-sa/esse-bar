@@ -12,7 +12,7 @@ function HomeText() {
           style={{
             fontFamily: "'Mochiy Pop One', sans-serif",
           }}
-          className="text-[#faf5f3] text-3xl md:text-5xl lg:text-7xl text-wrap"
+          className="text-[#faf5f3] text-3xl md:text-5xl lg:text-6xl text-wrap"
         >
           ESSE
         </span>
@@ -24,7 +24,7 @@ function HomeText() {
             fontFamily: "'Nunito Sans Variable', sans-serif",
             fontWeight: 200,
           }}
-          className="text-[#faf5f3] text-2xl md:text-4xl lg:text-6xl leading-8 lg:leading-16 text-wrap"
+          className="text-[#faf5f3] text-2xl md:text-3xl lg:text-4xl leading-8 lg:leading-16 text-wrap"
         >
           Assapora l’arte di un caffè perfetto!
         </span>
