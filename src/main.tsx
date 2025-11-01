@@ -5,7 +5,6 @@ import './index.css'
 import Home from '@pages/Home'
 import '@fontsource-variable/roboto-mono';
 import '@fontsource-variable/nunito-sans';
-import '@fontsource/libre-baskerville';
 import '@fontsource/mochiy-pop-one';
 
 createRoot(document.getElementById('root')!).render(
