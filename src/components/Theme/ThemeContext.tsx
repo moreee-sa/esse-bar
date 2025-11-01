@@ -3,11 +3,13 @@ import { createContext, useContext } from "react";
 
 type ThemeContextType = {
   primary: string;
+  secondary: string;
   text: string;
 };
 
 export const defaultTheme: ThemeContextType = {
   primary: "#ddb892",
+  secondary: "#e6ccb2",
   text: "#170700",
 };
 

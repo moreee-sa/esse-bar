@@ -7,10 +7,12 @@ function NavbarDesktop() {
   
   return (
     <div
-      className="w-full items-center px-20 py-6 sticky top-0 z-10 md:flex hidden"
-      style={{ backgroundColor: primary }}
+      className="w-full items-center px-20 lg:px-52 py-6 sticky top-0 z-10 md:flex hidden"
+      style={{
+        backgroundColor: primary
+      }}
     >
-      <div className="w-[40%] h-full flex items-center">
+      <div className="h-full flex items-center">
         <NavLogo brand="ESSE" path="/" />
       </div>
       <div className="w-full h-full flex justify-end items-center gap-4">

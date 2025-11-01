@@ -13,8 +13,7 @@ function NavLogo({ brand, path }: NavLogoProps) {
     <Link to={path}>
       <span
         style={{
-          fontFamily: "'Roboto Mono Variable', monospace",
-          fontWeight: 150,
+          fontFamily: "'Mochiy Pop One', sans-serif",
           color: text
         }}
         className="font-bold text-2xl"
