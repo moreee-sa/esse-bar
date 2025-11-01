@@ -1,9 +1,15 @@
 import NavLink from "@components/Navbar/NavLink"
 import NavLogo from "@components/Navbar/NavLogo"
+import { useTheme } from "@components/Theme/ThemeContext"
 
 function NavbarDesktop() {
+  const { primary } = useTheme();
+  
   return (
-    <div className="bg-[#24252a] w-full items-center px-20 py-6 sticky top-0 z-10 md:flex hidden">
+    <div
+      className="w-full items-center px-20 py-6 sticky top-0 z-10 md:flex hidden"
+      style={{ backgroundColor: primary }}
+    >
       <div className="w-[40%] h-full flex items-center">
         <NavLogo brand="ESSE" path="/" />
       </div>
