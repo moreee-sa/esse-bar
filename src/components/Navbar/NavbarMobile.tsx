@@ -17,7 +17,7 @@ function NavbarMobile() {
   return (
     <>
       <div
-        className="w-full items-center p-6 sticky top-0 z-10 flex md:hidden"
+        className="w-full items-center p-6 sticky top-0 z-50 flex md:hidden"
         style={{ backgroundColor: primary }}
       >
         <div className="w-full h-full flex items-center">

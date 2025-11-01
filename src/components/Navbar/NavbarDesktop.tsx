@@ -7,7 +7,7 @@ function NavbarDesktop() {
   
   return (
     <div
-      className="w-full items-center px-20 lg:px-52 py-6 sticky top-0 z-10 md:flex hidden"
+      className="w-full items-center px-20 lg:px-52 py-6 sticky top-0 z-50 md:flex hidden"
       style={{
         backgroundColor: primary
       }}
