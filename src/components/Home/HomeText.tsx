@@ -6,7 +6,7 @@ function HomeText() {
   const { primary, text } = useTheme();
   
   return (
-    <div className="flex flex-col justify-center md:justify-start absolute inset-0 z-10 w-full p-6 md:p-20 lg:px-52 lg:py-24 md:w-[70vw] lg:w-[80vw]">
+    <div className="flex flex-col justify-center lg:justify-start absolute inset-0 z-10 w-full p-6 md:p-20 lg:px-52 lg:py-24 md:w-[70vw] lg:w-[80vw]">
       <FadeContent blur={true} duration={800} delay={50} easing="ease-out" initialOpacity={0}>
         <span
           style={{
