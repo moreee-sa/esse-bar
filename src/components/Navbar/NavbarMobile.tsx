@@ -31,7 +31,7 @@ function NavbarMobile() {
       <div className={`z-20 fixed top-0 right-0 w-full h-full transition-[backdrop-filter] duration-300 md:hidden ${isOpen ? 'translate-x-0 backdrop-blur-xs' : 'translate-x-full'}`} onClick={() => handleMenu()} />
 
       <div
-        className={`z-30 fixed top-0 right-0 w-[250px] h-full transform transition-transform duration-300 md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+        className={`z-60 fixed top-0 right-0 w-[250px] h-full transform transition-transform duration-300 md:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
         style={{ backgroundColor: secondary }}
       >
         <div className="h-20 flex flex-col items-end justify-center p-6" onClick={() => handleMenu()}>
