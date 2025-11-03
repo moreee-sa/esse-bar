@@ -1,13 +1,15 @@
 import { Link } from "react-router"
 import { useTheme } from "../Theme/ThemeContext";
+import { CiCircleInfo } from "react-icons/ci";
 
 type NavLinkProps = {
   name: string;
   path: string;
   highlighted?: boolean;
+  infoIcon?: boolean;
 }
 
-function NavLink({ name, path, highlighted=false }: NavLinkProps) {
+function NavLink({ name, path, highlighted=false, infoIcon=false }: NavLinkProps) {
   const { text } = useTheme();
 
   return (
@@ -19,8 +21,9 @@ function NavLink({ name, path, highlighted=false }: NavLinkProps) {
             fontWeight: 400,
             color: text,
           }}
-          className="font-bold text-lg"
+          className="font-bold text-lg flex justify-center items-center gap-2"
         >
+          {infoIcon && <CiCircleInfo size={20} color={text} />}
           {name}
         </span>
         {!highlighted &&
