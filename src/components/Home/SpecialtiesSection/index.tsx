@@ -9,7 +9,7 @@ function SpecialtiesSection() {
       {/* Testo */}
       <div className="w-full flex items-center justify-center p-5">
         <span
-          className="text-4xl"
+          className="text-3xl lg:text-5xl"
           style={{
             fontFamily: "'Nunito Sans Variable', sans-serif",
             fontWeight: 400,
@@ -28,7 +28,7 @@ function SpecialtiesSection() {
             <FaCoffee color={primary} size={50} />
           </div>
           <span
-            className="text-3xl"
+            className="text-2xl md:text-3xl"
             style={{
               fontFamily: "'Mochiy Pop One', sans-serif",
               color: text,
@@ -37,14 +37,14 @@ function SpecialtiesSection() {
             Espresso
           </span>
           <span
-            className="text-xl mt-2 text-center"
+            className="text-lg md:text-xl mt-2 text-center p-1"
             style={{
               fontFamily: "'Nunito Sans Variable', sans-serif",
               fontWeight: 300,
               color: text,
             }}
           >
-            Il classico caffè concentrato
+            Il classico caffè
           </span>
         </div>
 
@@ -59,7 +59,7 @@ function SpecialtiesSection() {
             <FaCoffee color={primary} size={50} />
           </div>
           <span
-            className="text-3xl"
+            className="text-2xl md:text-3xl"
             style={{
               fontFamily: "'Mochiy Pop One', sans-serif",
               color: text,
@@ -68,14 +68,14 @@ function SpecialtiesSection() {
             Latte
           </span>
           <span
-            className="text-xl mt-2 text-center"
+            className="text-lg md:text-xl mt-2 text-center p-1"
             style={{
               fontFamily: "'Nunito Sans Variable', sans-serif",
               fontWeight: 300,
               color: text,
             }}
           >
-            Bevande calde con latte (cappuccino, latte macchiato)
+            Bevande calde con latte
           </span>
         </div>
 
