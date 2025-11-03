@@ -18,7 +18,7 @@ function NavbarDesktop() {
       <div className="w-full h-full flex justify-end items-center gap-4">
         <NavLink name="Home" path="/" />
         <NavLink name="Menu" path="/menu" />
-        <NavLink name="Contatti" path="/contatti" highlighted />
+        <NavLink name="Contatti" path="/contatti" highlighted infoIcon />
       </div>
     </div>
   )
