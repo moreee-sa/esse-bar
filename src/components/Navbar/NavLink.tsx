@@ -1,6 +1,6 @@
 import { Link } from "react-router"
 import { useTheme } from "../Theme/ThemeContext";
-import { CiCircleInfo } from "react-icons/ci";
+import { FiPhone } from "react-icons/fi";
 
 type NavLinkProps = {
   name: string;
@@ -23,7 +23,7 @@ function NavLink({ name, path, highlighted=false, infoIcon=false }: NavLinkProps
           }}
           className="font-bold text-lg flex justify-center items-center gap-2"
         >
-          {infoIcon && <CiCircleInfo size={20} color={text} />}
+          {infoIcon && <FiPhone size={20} color={text} />}
           {name}
         </span>
         {!highlighted &&
