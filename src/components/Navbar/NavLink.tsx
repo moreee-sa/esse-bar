@@ -14,7 +14,7 @@ function NavLink({ name, path, highlighted=false, infoIcon=false }: NavLinkProps
 
   return (
     <Link to={path}>
-      <div className={`group p-2 ${highlighted  && 'bg-white rounded-full hover:bg-[#b1a8a0] transition-colors duration-300'}`}>
+      <div className={`group px-4 py-2 ${highlighted  && 'bg-white rounded-full hover:bg-[#b1a8a0] transition-colors duration-300'}`}>
         <span
           style={{
             fontFamily: "'Nunito Sans Variable', sans-serif",
