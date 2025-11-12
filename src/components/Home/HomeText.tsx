@@ -1,5 +1,5 @@
 import FadeContent from "@components/FadeContent"
-import { IoRestaurantOutline } from "react-icons/io5";
+import { CiCoffeeCup } from "react-icons/ci";
 import { useTheme } from "@components/Theme/ThemeContext";
 
 function HomeText() {
@@ -7,27 +7,28 @@ function HomeText() {
   
   return (
     <div className="flex flex-col justify-center lg:justify-start absolute inset-0 z-10 w-full p-6 md:p-20 lg:px-52 lg:py-24 md:w-[70vw] lg:w-[80vw]">
-      <FadeContent blur={true} duration={800} delay={50} easing="ease-out" initialOpacity={0}>
-        <span
-          style={{
-            fontFamily: "'Mochiy Pop One', sans-serif",
-          }}
-          className="text-[#faf5f3] text-3xl md:text-5xl lg:text-6xl text-wrap"
-        >
-          ESSE
-        </span>
-      </FadeContent>
-
-      <FadeContent blur={true} duration={800} delay={100} easing="ease-out" initialOpacity={0} className="md:mt-4 lg:mt-7">
+      <FadeContent blur={true} duration={800} delay={0} easing="ease-out" initialOpacity={0}>
         <span
           style={{
             fontFamily: "'Nunito Sans Variable', sans-serif",
             fontWeight: 200,
           }}
-          className="text-[#faf5f3] text-2xl md:text-3xl lg:text-4xl leading-8 lg:leading-16 text-wrap"
+          className="text-[#faf5f3] text-2xl md:text-3xl lg:text-4xl text-wrap"
         >
-          Assapora l’arte di un caffè perfetto!
+          Assapora l’arte
         </span>
+      </FadeContent>
+
+      <FadeContent blur={true} duration={800} delay={200} easing="ease-out" initialOpacity={0} className="md:mt-2">
+        <span
+          style={{
+            fontFamily: "'Nunito Sans Variable', sans-serif",
+            fontWeight: 200,
+          }}
+          className="text-[#faf5f3] text-2xl md:text-3xl lg:text-4xl text-wrap"
+        >
+        di un caffè perfetto!
+      </span>
       </FadeContent>
 
       <FadeContent blur={true} duration={800} delay={200} easing="ease-out" initialOpacity={0}>
@@ -41,7 +42,7 @@ function HomeText() {
               color: text
             }}
           >
-            <IoRestaurantOutline color={text} size={18} />
+            <CiCoffeeCup color={text} size={30} />
             Apri Menu
           </button>
         </div>
