@@ -6,6 +6,7 @@ function HomeImage() {
         src="image/coffee_1.webp"
         alt=""
         className="w-full h-full object-cover object-top"
+        fetchPriority={"high"}
       />
     </div>
   );

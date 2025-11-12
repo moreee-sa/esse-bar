@@ -7,7 +7,7 @@ function NavbarDesktop() {
   
   return (
     <div
-      className="w-full items-center px-20 lg:px-52 py-6 sticky top-0 z-10 md:flex hidden"
+      className="w-full items-center px-20 lg:px-52 py-6 sticky top-0 z-50 md:flex hidden"
       style={{
         backgroundColor: primary
       }}
@@ -18,7 +18,7 @@ function NavbarDesktop() {
       <div className="w-full h-full flex justify-end items-center gap-4">
         <NavLink name="Home" path="/" />
         <NavLink name="Menu" path="/menu" />
-        <NavLink name="Contatti" path="/contatti" highlighted />
+        <NavLink name="Contatti" path="/contatti" highlighted infoIcon />
       </div>
     </div>
   )
