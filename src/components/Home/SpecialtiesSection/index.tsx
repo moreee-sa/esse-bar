@@ -6,7 +6,6 @@ function SpecialtiesSection() {
 
   return (
     <div className="bg-[#f3eae1] py-10">
-      {/* Testo */}
       <div className="w-full flex items-center justify-center p-5">
         <span
           className="text-3xl md:text-4xl lg:text-5xl"
