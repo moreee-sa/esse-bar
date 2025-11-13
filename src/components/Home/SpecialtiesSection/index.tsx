@@ -1,8 +1,9 @@
-import { useTheme } from "@components/Theme/ThemeContext"
-import { FaCoffee } from "react-icons/fa";
+import { useTheme } from "@components/Theme/ThemeContext";
+import BeverageCard from "./BeverageCard";
+import VerticalDivider from "./VerticalDivider";
 
 function SpecialtiesSection() {
-  const { primary, text } = useTheme();
+  const { text } = useTheme();
 
   return (
     <div className="bg-[#f3eae1] py-10">
@@ -20,65 +21,10 @@ function SpecialtiesSection() {
         </span>
       </div>
 
-      {/* Specialità Section */}
       <div className="w-full flex justify-center">
-        {/* Espresso */}
-        <div className="flex flex-col items-center justify-start w-80 h-full">
-          <div className="bg-[#904a1a] rounded-full p-4">
-            <FaCoffee color={primary} size={50} />
-          </div>
-          <span
-            className="text-2xl md:text-3xl"
-            style={{
-              fontFamily: "'Mochiy Pop One', sans-serif",
-              color: text,
-            }}
-          >
-            Espresso
-          </span>
-          <span
-            className="text-lg md:text-xl mt-2 text-center p-1"
-            style={{
-              fontFamily: "'Nunito Sans Variable', sans-serif",
-              fontWeight: 300,
-              color: text,
-            }}
-          >
-            Il classico caffè
-          </span>
-        </div>
-
-        {/* VerticalDivider */}
-        <div className="flex h-25">
-          <div className="bg-[#d3c8b2] w-0.5 h-full" />
-        </div>
-
-        {/* Latte */}
-        <div className="flex flex-col items-center justify-start w-80 h-full">
-          <div className="bg-[#904a1a] rounded-full p-4">
-            <FaCoffee color={primary} size={50} />
-          </div>
-          <span
-            className="text-2xl md:text-3xl"
-            style={{
-              fontFamily: "'Mochiy Pop One', sans-serif",
-              color: text,
-            }}
-          >
-            Latte
-          </span>
-          <span
-            className="text-lg md:text-xl mt-2 text-center p-1"
-            style={{
-              fontFamily: "'Nunito Sans Variable', sans-serif",
-              fontWeight: 300,
-              color: text,
-            }}
-          >
-            Bevande calde con latte
-          </span>
-        </div>
-
+        <BeverageCard title="Espresso" description="Il classico caffè" />
+        <VerticalDivider />
+        <BeverageCard title="Latte" description="Bevande calde con latte" />
       </div>
     </div>
   )
