@@ -6,11 +6,11 @@ type BeverageCardProps = {
   description: string;
 }
 
-function BeverageCard({title, description}: BeverageCardProps) {
+function BeverageCard({ title, description }: BeverageCardProps) {
   const { primary, text } = useTheme();
   
   return (
-    <div className="flex flex-col items-center justify-start w-80 h-full">
+    <div className="flex flex-col items-center justify-start w-40 h-full">
       <div className="bg-[#904a1a] rounded-full p-4">
         <FaCoffee color={primary} size={50} />
       </div>
