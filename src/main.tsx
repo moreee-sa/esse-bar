@@ -6,6 +6,7 @@ import Home from '@pages/Home'
 import '@fontsource-variable/roboto-mono';
 import '@fontsource-variable/nunito-sans';
 import '@fontsource/mochiy-pop-one';
+import '@fontsource-variable/manrope';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
