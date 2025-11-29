@@ -1,7 +1,7 @@
 function HomeImage() {
   return (
-    <div className="w-full h-full">
-      <div className="absolute inset-0 bg-black/40" />
+    <div className="w-full h-screen">
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-xs" />
       <img
         src="image/coffee_1.webp"
         alt=""
