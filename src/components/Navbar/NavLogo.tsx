@@ -1,5 +1,6 @@
 import { Link } from "react-router"
-import { useTheme } from "../Theme/ThemeContext";
+import { THEME } from "@/lib/constants"
+import '@fontsource-variable/playfair-display';
 
 type NavLogoProps = {
   brand: string;
@@ -7,14 +8,13 @@ type NavLogoProps = {
 }
 
 function NavLogo({ brand, path }: NavLogoProps) {
-  const { text } = useTheme();
-
   return (
     <Link to={path}>
       <span
         style={{
-          fontFamily: "'Mochiy Pop One', sans-serif",
-          color: text
+          color: THEME.text,
+          fontFamily: "'Playfair Display Variable', serif",
+          fontWeight: 400
         }}
         className="font-bold text-2xl"
       >

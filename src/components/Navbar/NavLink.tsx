@@ -1,6 +1,6 @@
 import { Link } from "react-router"
-import { useTheme } from "../Theme/ThemeContext";
 import { FiPhone } from "react-icons/fi";
+import { THEME } from "@/lib/constants";
 
 type NavLinkProps = {
   name: string;
@@ -10,20 +10,18 @@ type NavLinkProps = {
 }
 
 function NavLink({ name, path, highlighted=false, infoIcon=false }: NavLinkProps) {
-  const { text } = useTheme();
-
   return (
     <Link to={path}>
-      <div className={`group px-4 py-2 ${highlighted  && 'bg-white rounded-full hover:bg-[#b1a8a0] transition-colors duration-300'}`}>
+      <div className={`group px-4 py-2 ${highlighted  && 'outline-2 hover:outline-white rounded-full hover: transition-colors duration-300'}`}>
         <span
           style={{
             fontFamily: "'Nunito Sans Variable', sans-serif",
             fontWeight: 400,
-            color: text,
+            color: THEME.text,
           }}
           className="font-bold text-lg flex justify-center items-center gap-2"
         >
-          {infoIcon && <FiPhone size={20} color={text} />}
+          {infoIcon && <FiPhone size={20} color={THEME.text} />}
           {name}
         </span>
         {!highlighted &&
