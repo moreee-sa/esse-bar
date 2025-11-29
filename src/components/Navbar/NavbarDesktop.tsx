@@ -1,15 +1,13 @@
 import NavLink from "@components/Navbar/NavLink"
 import NavLogo from "@components/Navbar/NavLogo"
-import { useTheme } from "@components/Theme/ThemeContext"
+import { THEME } from "@/lib/constants"
 
 function NavbarDesktop() {
-  const { primary } = useTheme();
-  
   return (
     <div
       className="w-full items-center px-20 lg:px-52 py-6 sticky top-0 z-50 md:flex hidden"
       style={{
-        backgroundColor: primary
+        backgroundColor: THEME.navbar
       }}
     >
       <div className="h-full flex items-center">
