@@ -1,5 +1,5 @@
 import Navbar from "@components/Navbar"
-import HomeSection from "@components/Home/HomeSection"
+import HomeSection from "@/components/Home"
 import SpecialtiesSection from "@components/Home/SpecialtiesSection"
 import FeaturesSection from "@/components/Home/FeaturesSection"
 

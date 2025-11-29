@@ -1,18 +1,16 @@
-import { useTheme } from "@components/Theme/ThemeContext";
 import BeverageCard from "./BeverageCard";
+import { THEME } from "@/lib/constants";
 
 function SpecialtiesSection() {
-  const { text } = useTheme();
-
   return (
-    <div className="bg-[#f3eae1] py-10">
+    <div className="py-10" style={{ backgroundColor: THEME.backgroundSecondary }}>
       <div className="w-full flex items-center justify-center p-5">
         <span
           className="text-3xl md:text-4xl lg:text-5xl"
           style={{
             fontFamily: "'Nunito Sans Variable', sans-serif",
             fontWeight: 400,
-            color: text,
+            color: THEME.text,
           }}
         >
           Specialità
