@@ -4,9 +4,8 @@ import '@fontsource-variable/playfair-display';
 import { THEME } from "@/lib/constants";
 
 function HomeText() {
-  
   return (
-    <div className="flex flex-col gap-5 items-center absolute inset-0 z-10 w-full py-20">
+    <div className="flex flex-col gap-5 items-center justify-center absolute inset-0 z-10 w-full py-20">
       <div className="flex flex-col items-center">
         <span
           className="text-7xl md:text-8xl lg:text-9xl"
