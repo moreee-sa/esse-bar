@@ -3,8 +3,8 @@ import { THEME } from "@/lib/constants";
 
 function SpecialtiesSection() {
   return (
-    <div className="px-5 py-10" style={{ backgroundColor: THEME.backgroundSecondary }}>
-      <div className="w-full flex items-center justify-center p-5">
+    <div className="flex flex-col gap-5 py-5">
+      <div className="w-full flex items-center md:justify-center py-3">
         <span
           className="text-3xl md:text-4xl lg:text-5xl"
           style={{

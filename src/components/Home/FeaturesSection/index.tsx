@@ -3,7 +3,7 @@ import ScheduleBox from "./ScheduleBox"
 
 function FeaturesSection() {
   return (
-    <div className="bg-[#452a1b] flex flex-col lg:flex-row box-content">
+    <div className="flex flex-col lg:flex-row box-content">
       <InfoBox />
       <ScheduleBox />
     </div>
