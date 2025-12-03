@@ -1,6 +1,6 @@
 function InfoBox() {
   return (
-    <div className="flex-1 bg-[#452a1b] flex flex-col items-start gap-5 md:gap-8 p-15 md:py-20 md:px-24 rounded-t-2xl lg:rounded-t-none lg:rounded-l-2xl">
+    <div className="flex-1 bg-[#452a1b] flex flex-col items-start gap-5 md:gap-8 p-10 md:py-15 md:px-20 rounded-t-2xl lg:rounded-t-none lg:rounded-l-2xl">
       <span
         style={{
           fontFamily: "'Manrope Variable', sans-serif",
